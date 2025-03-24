@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="test5">
+  <link
+    name="khung">
+    <inertial>
+      <origin
+        xyz="0.0577628377902291 -3.15754214085138E-05 -0.0404956700228231"
+        rpy="0 0 0" />
+      <mass
+        value="4.53557886714147" />
+      <inertia
+        ixx="0.00844576250788079"
+        ixy="-5.29326694736228E-08"
+        ixz="0.000979601261793115"
+        iyy="0.0175459541466957"
+        iyz="-2.46792303045788E-08"
+        izz="0.0230652387996698" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/khung.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/khung.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_front">
+    <inertial>
+      <origin
+        xyz="2.4508E-14 -2.5653E-14 0.015009"
+        rpy="0 0 0" />
+      <mass
+        value="0.11666" />
+      <inertia
+        ixx="1.2753E-05"
+        ixy="8.1438E-22"
+        ixz="1.3965E-21"
+        iyy="1.2753E-05"
+        iyz="-2.1868E-21"
+        izz="1.1299E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/right_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.65098 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/right_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_fron"
+    type="continuous">
+    <origin
+      xyz="0.1275 -0.095 -0.0875"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="khung" />
+    <child
+      link="right_front" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="right_back">
+    <inertial>
+      <origin
+        xyz="5.82867087928207E-15 6.02989880249538E-15 0.0150094084470206"
+        rpy="0 0 0" />
+      <mass
+        value="0.116655502567617" />
+      <inertia
+        ixx="1.27534919563762E-05"
+        ixy="5.89388466268934E-23"
+        ixz="2.06553378915748E-22"
+        iyy="1.27534919563762E-05"
+        iyz="1.29715743309176E-21"
+        izz="1.12990296788599E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/right_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_back"
+    type="continuous">
+    <origin
+      xyz="0.0025 -0.095 -0.0875"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="khung" />
+    <child
+      link="right_back" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="left_front">
+    <inertial>
+      <origin
+        xyz="-3.06837888430778E-14 3.20785065177631E-14 -0.0150094084470206"
+        rpy="0 0 0" />
+      <mass
+        value="0.116655502567617" />
+      <inertia
+        ixx="1.27534919563762E-05"
+        ixy="8.42777310569237E-22"
+        ixz="-1.84401597439803E-22"
+        iyy="1.27534919563762E-05"
+        iyz="5.59292803933684E-21"
+        izz="1.12990296788598E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/left_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/left_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_front"
+    type="continuous">
+    <origin
+      xyz="0.127499999999969 0.095 -0.087500000000032"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="khung" />
+    <child
+      link="left_front" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="left_back">
+    <inertial>
+      <origin
+        xyz="-4.20774526332934E-14 -4.39509539873484E-14 -0.0150094084470207"
+        rpy="0 0 0" />
+      <mass
+        value="0.116655502567617" />
+      <inertia
+        ixx="1.27534919563762E-05"
+        ixy="-8.17599829199721E-23"
+        ixz="-4.5094580182196E-21"
+        iyy="1.27534919563762E-05"
+        iyz="4.31099839786668E-21"
+        izz="1.12990296788599E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/left_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_back"
+    type="continuous">
+    <origin
+      xyz="0.00249999999995788 0.095 -0.0874999999999561"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="khung" />
+    <child
+      link="left_back" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0 3.29597460435593E-17 0.00644835915793761"
+        rpy="0 0 0" />
+      <mass
+        value="0.0346715546726792" />
+      <inertia
+        ixx="8.14920792292443E-06"
+        ixy="0"
+        ixz="-3.14050566026151E-22"
+        iyy="3.605269856765E-06"
+        iyz="-1.66755298040343E-21"
+        izz="9.78608502282706E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_link_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0.066772" />
+    <parent
+      link="khung" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.00320285094520032 0.0662561450499644 -0.000214066075646254"
+        rpy="0 0 0" />
+      <mass
+        value="0.703698881624866" />
+      <inertia
+        ixx="0.000330769991773148"
+        ixy="-0.000140118285768749"
+        ixz="1.59792128003379E-05"
+        iyy="0.000500878090640244"
+        iyz="9.36989814502208E-06"
+        izz="0.000568656690717836" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_link_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.01"
+      rpy="1.5708 0 -0.066772" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="-0.066723 0 -0.99777" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>
